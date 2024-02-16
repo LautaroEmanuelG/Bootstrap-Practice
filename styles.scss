@@ -1,0 +1,17 @@
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/variables-dark";
+
+// Create your own map of colors
+$custom-colors: (
+    gold: #FFD700,
+    coral: #FF7F50,
+    fluor: #00FF00,
+);
+//Merge the maps 
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
